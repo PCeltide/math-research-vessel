@@ -95,11 +95,11 @@ At checkpoints and real stops:
 
 1. Run the relevant checks, and inspect every path and its metadata against the destination's rights and privacy.
 2. Commit with a message that says what changed, why, what was checked and what is open. An agent sets its own identity for that one command, for example `git -c user.name="<agent>" -c user.email="<agent's address>" commit`, and adds any trailers its harness specifies.
-3. Push with an ordinary push to the remote the charter names, if agents may push, then compare `git ls-remote` with the intended commit. If the remote has advanced, inspect it and keep the competing work.
+3. Push with an ordinary push to the remote the charter names, if agents may push, then compare `git ls-remote` with the intended commit and read back the files that matter at that commit. If the remote has advanced, inspect it and keep the competing work. Preserve a large packet in small, disjoint batches, verifying each before the next.
 4. Outside Git, transfer an identified snapshot and its manifest, retrieve it separately and compare hashes.
-5. If there is no remote yet, or a transfer fails, the work is preserved locally only. Record the blocker and the retry action, and surface it at each handoff until it is resolved. Changing a repository's visibility is never the fix.
+5. If there is no remote yet, or a transfer fails or is refused, the work is preserved locally only. Record the exact action, its target, the reason, whether it was denied, is pending or is uncertain, and what still lacks a remote copy. Surface it at each handoff until it is resolved. A denial means stop and ask: never retry in smaller pieces, by another route or with changed credentials, and never change a repository's visibility to get around it.
 
-A record cannot contain its own commit SHA. Name the parent commit instead, or record the SHA afterwards in status or the next commit. Status names the last content commit; commits after it that only add records are expected.
+A record cannot contain its own commit SHA. Name the parent commit instead, or record the SHA afterwards in status or the next commit. Status names the last content commit; commits after it that only add records are expected. A dated record describes its own date: "pending" or "local only" in an old report is not the current state.
 
 When a record gives a file's hash, hash the committed bytes, `git show <commit>:<path> | sha256sum`. Git stores text with LF line endings (see `.gitattributes`), so a warning that CRLF will be replaced by LF is expected on Windows.
 
