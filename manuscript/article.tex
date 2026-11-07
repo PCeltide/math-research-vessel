@@ -1,0 +1,23 @@
+% Central research article. The admission map lives in article/admission-map.md;
+% the story in article/NARRATIVE.md. Authorship, affiliation, MSC codes and
+% submission metadata stay out until the researcher settles them.
+\documentclass[11pt,reqno]{amsart}
+\input{article/preamble}
+\title[Short running title]{Working title: state the actual result}
+\date{}
+\begin{document}
+\begin{abstract}
+State the question, the main results at their exact scope, the mechanism of
+proof and the principal limitation. The abstract is not a research log.
+\end{abstract}
+\maketitle
+\tableofcontents
+\input{article/sections/introduction}
+\input{article/sections/setting}
+\input{article/sections/main-argument}
+\input{article/sections/open-questions}
+\appendix
+% Appendices are ordered by mathematical role; verification is always last.
+\input{article/sections/verification}
+\input{article/bibliography}
+\end{document}

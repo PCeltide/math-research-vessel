@@ -1,0 +1,15 @@
+# Convenience only: never rely on this for privacy or already tracked files.
+.env
+.env.*
+!.env.example
+.local/
+__pycache__/
+*.pyc
+build/
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz

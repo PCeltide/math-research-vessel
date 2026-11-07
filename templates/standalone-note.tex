@@ -1,0 +1,62 @@
+% Standalone research note: an audit, a result before admission, a learning note.
+% Keep this copy unchanged; start each note from a copy.
+% Needs a standard TeX distribution with amsart, TikZ and tikz-cd.
+\documentclass[11pt,reqno]{amsart}
+
+\usepackage{fullpage}
+\setlength{\textheight}{650pt}
+\setlength{\topmargin}{0pt}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{mathtools,amssymb}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz,tikz-cd}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage{hyperref}
+
+\definecolor{ArticleBlue}{HTML}{173B57}
+\definecolor{ArticleRed}{HTML}{8E2F2F}
+\hypersetup{colorlinks=true, linkcolor=ArticleBlue, citecolor=ArticleRed,
+  urlcolor=ArticleBlue, pdfpagemode=UseOutlines}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{question}[theorem]{Question}
+
+\numberwithin{equation}{section}
+\setcounter{tocdepth}{1}
+\setlist{nosep}
+
+\title[Short running title]{Working title: state the actual result}
+\date{}
+
+\begin{document}
+\begin{abstract}
+The question, the result at its exact scope, the mechanism and the principal
+limitation. For an audit: the span examined, the outcome and the open issues.
+\end{abstract}
+\maketitle
+
+\section{Question and setting}
+% The exact target, quantifiers and hypotheses the argument uses.
+
+\section{The argument}
+% Give the mechanism first, then the steps in dependency order, each with its
+% warrant. A source comment before each claim can name its report and review.
+
+\section{What remains}
+% Conditional premises, open obligations and what is explicitly not claimed.
+
+% \begin{thebibliography}{9}
+% \bibitem{key} Author, \emph{Title}, stable identifier, year.
+% \end{thebibliography}
+\end{document}

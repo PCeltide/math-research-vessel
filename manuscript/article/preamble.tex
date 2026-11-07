@@ -1,0 +1,43 @@
+% Central-article preamble.
+% amsart, 11pt full-page text block, restrained theorem hierarchy on one
+% counter, coloured links and TikZ.
+% Add subject macros only when the mathematics repeats an object.
+
+\usepackage{fullpage}
+\setlength{\textheight}{650pt}
+\setlength{\topmargin}{0pt}
+\usepackage{lmodern}
+\usepackage{microtype}  % if font expansion fails locally: \usepackage[expansion=false]{microtype}
+\usepackage{mathtools,amssymb}
+\usepackage{booktabs,array,needspace}
+\usepackage{enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz,tikz-cd}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage{hyperref}
+
+\definecolor{ArticleBlue}{HTML}{173B57}
+\definecolor{ArticleRed}{HTML}{8E2F2F}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=ArticleBlue,
+  citecolor=ArticleRed,
+  urlcolor=ArticleBlue,
+  pdfpagemode=UseOutlines
+}
+
+% Only proved results use the plain-style environments.
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{question}[theorem]{Question}  % open problems in the closing section
+
+\numberwithin{equation}{section}
+\setcounter{tocdepth}{1}
+\setlist{nosep}

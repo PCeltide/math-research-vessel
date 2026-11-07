@@ -1,0 +1,10 @@
+# Git stores text with LF line endings, so committed bytes and their hashes
+# are the same on every machine.
+* text=auto eol=lf
+*.pdf binary
+# Stored sources and preserved originals keep their exact bytes.
+sources/** -text
+# The project's own source records are ordinary text.
+sources/README.md text eol=lf
+sources/inventory.md text eol=lf
+# originals/** -text
