@@ -26,7 +26,7 @@ Under these headings, in this order. Link to reports, proofs, plans and commits 
 4. **Identities:** the source editions, the candidate and review identities, and the branch and exact commit (or file hashes, if uncommitted). Copy the branch and commit from `git branch --show-current` and `git rev-parse HEAD`, never from memory; if the branch comes back empty, HEAD is detached, so write "detached at <commit>".
 5. **Owned files and dirty work:** what this work owns, what is uncommitted or unpushed, and what others are working on that must stay intact.
 6. **Bound:** the effort bound and how much of it is used, the stopping condition and how close the work is to it. If timeboxing is on, also the start, the gates, any excluded spans and the time remaining.
-7. **Preservation:** the last pushed commit and its remote check, or "local only" with the reason (no remote yet, push not allowed, or the blocker).
+7. **Preservation:** the last pushed commit and its remote readback evidence; or "local only" with the reason (no remote yet or push not allowed); or "preservation blocked; close-out incomplete" with the blocker.
 8. **Decisions pending with the researcher:** each one, phrased so it can be answered.
 9. **Next prompt:** one concrete prompt, with its required reading (the startup files, then the named inputs) and the guides and skills it should use.
 
@@ -35,7 +35,7 @@ Keep secrets, credentials, personal data and private source text out of it.
 
 ## 3. Check and save it
 
-For a stop, first run the workflow's [Preservation](../../../docs/guides/workflow.md#preservation) and [Handoff and stop](../../../docs/guides/workflow.md#handoff-and-stop) sections: the privacy check, commit, push and remote comparison, the formal candidates when formal verification is in use, and moving finished status entries to the history file.
+For a stop, first run the workflow's [Preservation](../../../docs/guides/workflow.md#preservation) and [Handoff and stop](../../../docs/guides/workflow.md#handoff-and-stop) sections: the privacy check, commit, push, remote comparison and readback, the formal candidates when formal verification is in use, and moving finished status entries to the history file.
 
 Then reread the handoff against the actual repository: the commits exist and are pushed, the files are where it says, and status points to it. A record cannot contain its own commit SHA; name the parent commit, or record the SHA in status afterwards.
 *Done when* the preservation steps are done, the handoff is committed, and status links it.

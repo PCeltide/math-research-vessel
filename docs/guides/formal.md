@@ -6,7 +6,7 @@ A proof assistant such as Lean, Rocq (formerly Coq), Isabelle or Agda, or a chec
 
 Start from the article's claims, not from the lemmas a library happens to offer. Name the terminal: the exact result a campaign aims at. A faithful formalization of a terminal uses the article's actual objects, maps, quantifiers and hypotheses. Every nontrivial input is either proved in the checked chain or kept visibly as a hypothesis of a **weaker, named intermediate theorem**. There is no hidden assumption equivalent to the conclusion, and no abstract model silently standing in for the real object. A connected conditional argument over the actual objects is an honest milestone; it is never presented as the unconditional theorem. Standard logical axioms are separate from unproved mathematical assumptions.
 
-Before execution, compare a few candidate first contracts, each with its minimum faithful statement and its first obstruction, and freeze one. Available workers are not a reason to start several proof lanes. Count discharged obligations and faithful connections, not files, declarations or tags. The most useful next gain is usually a connected lemma that removes a real external assumption.
+Before execution, compare a few candidate first contracts, each with its minimum faithful statement and its first obstruction, and freeze one. The researcher chooses the terminal and launches the campaign (a bounded run of formal work toward it); comparing and freezing a first contract prepares that decision and starts nothing. Available workers are not a reason to start several proof lanes. Count discharged obligations and faithful connections, not files, declarations or tags. The most useful next gain is often a connected lemma that removes a real external assumption or makes one precise.
 
 ## Choosing what to formalize
 
@@ -17,10 +17,10 @@ Each candidate passes a **feasibility gate** before full work. Check early wheth
 ## Evidence states
 
 - **Source candidate:** the route and the relevant library declarations have been inspected; the project statement has not compiled.
-- **Compiled consumer:** the exact project-facing statement compiled, with its dependencies and transitive axioms recorded. It is not yet known to say the intended mathematics.
+- **Compiled consumer:** the exact project statement that uses the library result compiled, with its dependencies and transitive axioms recorded. It is not yet known to say the intended mathematics.
 - **Qualified endpoint:** its types, hypotheses, maps and correspondence have passed the required review and acceptance.
 - **Integrated result:** the qualified endpoint is used in the intended proof chain, and that connection has been reviewed.
-- **Reported, awaiting reconciliation:** a result someone reported whose decisive source and receipt have not been inspected. It enlarges no verified scope.
+- **Reported, awaiting reconciliation:** a result someone reported whose decisive source and receipt have not been inspected. It enlarges no verified scope, and is not presumed to have failed.
 
 A library result being present in source and being faithfully applicable to the project's theorem are separate facts. A library's unreviewed or frontier area is not reviewed by being imported, and a tag or docstring may cover only part of a statement: read the literal signature. AI or external provenance is neither proof of applicability nor a reason to discard checked work.
 
@@ -49,7 +49,7 @@ Pin the tool and library versions per project, in `formal/README.md`. Keep a run
 Commit the recipe and the pins; caches and toolchains belong to the environment. Replay in the pinned environment before claiming a formal check. If no checker ran, say so.
 
 - **One compiler owner per shared runtime.** Keep one queue of builds, with each run's source, dependency and option bindings. Source reading, review and preservation run in parallel where their files and outcomes are separate.
-- **Bounded runs.** Give a diagnostic run a limit and assess a failure before extending it. Record the real outcome of the build itself apart from any wrapper's exit. Never relabel a failure or a hold as success, and never repeat a failed run unchanged to hide uncertainty.
+- **Bounded runs.** Give a diagnostic run a limit and assess a failure before extending it. Record the real outcome of the build itself apart from any wrapper's exit. Never relabel a failed, inconclusive or held result as success, and never repeat a failed run unchanged to hide uncertainty.
 - **Reuse before rerunning.** Start from existing receipts. Rerun only a named consumer or a missing decisive check, and record why existing evidence cannot replace it. A rerun is new dated evidence, not recovered old logs; no blanket replay of history.
 - **Version moves are deliberate.** Keep the production pin. Move a named consumer to a newer version only after qualifying its dependencies there, and never chase each upstream release.
 - **Compiled artifacts.** Back up a build cache worth keeping to private storage outside Git, with hashes, and verify it by a fresh download. Source and file inventories are not binary backups, and restored binaries are not a fresh compiler check.
@@ -57,13 +57,13 @@ Commit the recipe and the pins; caches and toolchains belong to the environment.
 
 ## Correspondence review
 
-Through the [review-dispatch skill](../../.agents/skills/review-dispatch/SKILL.md), a reviewer compares the literal formal statement and its hypotheses with the informal claim, line by line. Disclose placeholders and newly assumed statements, and name every residual bridge, that is, every part of the informal claim the formal statement does not reach. Say which kind of correspondence holds: to the **statement**, to the **steps of the printed proof** (a formal proof may take a different route), or **partial coverage**. While a certificate is active, freeze the informal statement it corresponds to. Any later change to that statement is compared explicitly with the certificate.
+Through the [review-dispatch skill](../../.agents/skills/review-dispatch/SKILL.md), a reviewer compares the literal formal statement and its hypotheses with the informal claim, line by line. Disclose placeholders and newly assumed statements, and name every residual bridge, that is, every part of the informal claim the formal statement does not reach. Say whether it corresponds to the **full statement** or covers it only **partially**, and separately whether it follows the **steps of the printed proof** (a formal proof may take a different route). While a certificate is active, freeze the informal statement it corresponds to. Any later change to that statement is compared explicitly with the certificate.
 
 Source and semantic review, the compiler and axiom check, correspondence, preservation and presentation are separate gates; a PASS names its gate, scope and revision. Re-review the exact repair, and stop when the required findings are resolved, not after a fixed number of rounds.
 
 ## In the article
 
-Mathematical clarity comes before verification layout (see "Polishing passes" in the [central-article guide](central-article.md)). Call a result formally verified only when the displayed statement matches the checked statement exactly; otherwise say "formally checked step". Formal evidence is mapped in the last appendix, which separates the three kinds of correspondence above. Its prominence follows the assurance it adds, not the size of the effort.
+Mathematical clarity comes before verification layout (see "Polishing passes" in the [central-article guide](central-article.md)). Call a result formally verified only when the displayed statement matches the checked statement exactly; otherwise say "formally checked step". Formal evidence is mapped in the last appendix, which keeps those correspondence questions separate. Its prominence follows the assurance it adds, not the size of the effort.
 
 Classify each retained certificate by its role: completeness or integrality evidence, an interface to the actual objects, a narrow safeguard on conventions, or a supporting helper. Being reproducible does not earn equal prominence.
 

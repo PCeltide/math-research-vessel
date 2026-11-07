@@ -58,8 +58,8 @@ A new claim noticed while editing goes to a bounded research record first. It is
   - a labelled boundary of the input that was not checked formally or computationally;
   - a separate table for computations.
 
-  Scale this to the evidence: with only one or two computations, a single table suffices. Distinguish computations used in a proof, independent corroboration and exploratory searches. For formal evidence, distinguish correspondence to a statement, to the steps of the printed proof, and partial coverage (see the [formal guide](formal.md#correspondence-review)).
-- **A mathematical supplement** may sit beside the article for substantial mathematics that formal or computational work produced. It follows this guide's admission and review rules and keeps written and checked arguments distinct.
+  Scale this to the evidence: with only one or two computations, a single table suffices. Distinguish computations used in a proof, independent corroboration and exploratory searches. For formal evidence, separate full from partial statement correspondence, and both from correspondence to the printed proof's steps (see the [formal guide](formal.md#correspondence-review)).
+- **A mathematical supplement** may sit beside the article, under this guide's admission and review rules; the [formal guide](formal.md#in-the-article) says what it holds.
 
 ## Polishing passes
 
