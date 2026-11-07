@@ -48,6 +48,8 @@ Save each substantive task as `docs/plans/<task>.md`, or link an approved contra
 - **Effort bound:** what limits the work, such as a number of routes or attempts, a scope, or a review gate. When the charter turns timeboxing on, this is a wall-clock timebox (see below).
 - **Stop:** the stopping condition, and who decides the next step.
 
+**Keep going while a path is open.** An assignment stops for one of three reasons only: the stopping condition is met, the effort bound is used up, or the next step needs the researcher (an approval, a scope change, a reserved decision). Reaching a checkpoint, finishing a subtask, a natural pause or a long session is none of these. If a clear next step lies inside scope and the bound, take it; checkpoint as you go. Before stopping, list the open in-scope paths and say which of the three reasons ends each one. A stop handoff that names a next step the agent could have taken itself was premature.
+
 Every dispatch to a worker names the AGENTS.md startup route plus its extra inputs. Every report records the files read and their revisions.
 
 ## Optional: timeboxing
