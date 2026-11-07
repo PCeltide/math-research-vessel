@@ -28,7 +28,7 @@ For each person: background, and what to explain while it is being rebuilt; pref
 
 Rights and privacy boundaries, where sources and evidence may be stored, available tools and models, and what needs the researcher's sign-off: pending.
 
-**Git remote:** the private repository work is pushed to, and whether agents may commit and push without asking each time: pending.
+**Git remote:** the private repository work is pushed to, and whether agents may commit and push without asking each time: pending. With push allowed, every stop is pushed and read back first (see the policy).
 
 **Timeboxing:** off. Turn it on here to give assignments wall-clock limits (see the workflow's [Timeboxing](guides/workflow.md#optional-timeboxing) section).
 

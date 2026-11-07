@@ -12,9 +12,9 @@ When a trigger below fires, read that guide in full before acting (for the workf
 - [Workflow](docs/guides/workflow.md): framing a project, starting an assignment, auditing existing mathematics, testing or writing up a result, updating the ledger, committing or pushing a checkpoint, stopping.
 - [Mathematical writing](docs/guides/mathematical-writing.md): drafting, revising or reviewing any mathematical exposition, whether a proof, note, report or the article.
 - [Sources](docs/guides/sources.md): receiving, storing, recovering or reading a source; recording an edition or locator; running a literature or positioning search.
-- [Central article](docs/guides/central-article.md): editing, admitting a result into, restructuring or reviewing the article in `manuscript/` or its NARRATIVE.md; building the PDF; changing the LaTeX template.
+- [Central article](docs/guides/central-article.md): editing, admitting a result into, restructuring or reviewing the article in `manuscript/`, its NARRATIVE.md or a mathematical supplement; building the PDF; changing the LaTeX template.
 - [Computation](docs/guides/computation.md): writing, running or citing a scripted calculation, search or symbolic check.
-- [Formal verification](docs/guides/formal.md): considering, running or reviewing a proof-assistant check; describing formal evidence in prose.
+- [Formal verification](docs/guides/formal.md): choosing a formal target, running, rerunning or reviewing a proof-assistant check; restoring its environment or build cache; describing formal evidence in prose.
 - [Discovery](docs/guides/discovery.md): searching for known theorems or prior results, or mapping the project's own results and their dependencies.
 - [Review dispatch](.agents/skills/review-dispatch/SKILL.md): a claim, proof, repair, citation change or integration needs an independent check.
 - [Citation check](.agents/skills/citation-check/SKILL.md): adding, changing, moving or auditing a citation or an attribution. Run it before review dispatch.

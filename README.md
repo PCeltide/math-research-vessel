@@ -7,8 +7,8 @@ AI agents can draft proofs, search the literature and run checks. Left alone, th
 - **Every claim says where it stands.** Proposed, checked by its author, independently reviewed, computed, formally verified, or accepted by the researcher. These are separate states, and a conditional result stays conditional.
 - **Claims are tested, then reviewed independently.** The author tries small cases and counterexamples first. Then a fresh agent checks the exact text without the author's reasoning, and every fix goes back for another check.
 - **Citations are checked.** Every load-bearing citation is checked against the exact edition and page of the source, with its hypotheses matched to how it is used.
-- **Work is bounded.** Each task has a deliverable and a stopping condition. The researcher decides what starts, what is accepted and what is published.
-- **Nothing important lives only in a chat.** Results go into one report per task and proofs into LaTeX. Checkpoints are committed and pushed often, and handoffs let a fresh session continue.
+- **Work is bounded, and finishes.** Each task has a deliverable and a stopping condition, and keeps going while a clear path inside its scope remains. The researcher decides what starts, what is accepted and what is published.
+- **Nothing important lives only in a chat.** Results go into one report per task and proofs into LaTeX. Checkpoints are committed and pushed often, every stop is read back from the remote, and handoffs let a fresh session continue.
 
 ## Start a project
 
