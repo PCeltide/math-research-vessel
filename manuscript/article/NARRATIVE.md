@@ -1,34 +1,32 @@
 # The story of the article
 
-This is the editorial companion to the [article](../article.tex). It says what the reader should come away understanding, why the material is in this order and what deserves emphasis. It changes as the research develops. The [central-article guide](../../docs/guides/central-article.md) governs admission and review. Mathematical evidence stays in reports.
+This is the editorial companion to the [article](../article.tex). It says what the reader should come away understanding, why the selected material is in this order and what deserves emphasis. It changes as the research develops; the prompts below do not prescribe a finished paper's structure. The [central-article guide](../../docs/guides/central-article.md) governs selection, admission and review. Mathematical evidence stays in reports.
 
 ## The central question
 
-One sentence: the question the article answers. Then the present answer in a few sentences, including any striking contrast, and the connection the reader should leave with.
+One sentence: the question the article asks. Then the present answer, or what this account has not yet resolved, in a few sentences, and the connection the reader should leave with. An early draft can begin with the question and checked literature; it need not announce a new theorem.
 
 ## The reader and the contribution
 
-The reader: the specialist this is written for, what they already know, and what must be explained to them.
+The reader: who this is written for, what they already know, and what must be explained to them.
 
-The contribution, in a few connected steps:
+Describe the contribution in connected steps suited to the material: what is established, by which mechanism, and at what scope. It may be a new result, a synthesis or reconstruction of known mathematics, a clarified question or an obstruction. Keep proposed outcomes distinct from established ones.
 
-1. **First step:** what is shown, and the mechanism that makes it work.
-2. **Second step:** …
-3. **Consequence:** what follows, at its exact scope.
-
-Where the work corrects or extends prior literature, say where that comparison belongs. Usually it comes after the positive results and their mechanism.
+Say where prior literature frames the question and where any detailed correction or extension belongs. A reference article may offer useful narrative techniques; choose the order this argument needs.
 
 ## The reading order
 
 | Movement | What the reader gains | Why it belongs here |
 |---|---|---|
-| Introduction | The headline results and their mechanism | The contribution is visible before its machinery. |
+| Introduction | The question, present answer or open gap, and contribution | The purpose is visible before its machinery. |
 | … | … | … |
-| Verification appendix (last) | Where each check is, what it checked, what remains input | Evidence stays inspectable without interrupting the argument. |
+| Evidence appendix, if needed (last) | Where each check is, what it checked, what remains input | Evidence stays inspectable without interrupting the argument. |
+
+Replace these starter rows with the movements this draft needs. A mature reference paper's section hierarchy is not a template to reproduce automatically.
 
 ## Emphasis and restraint
 
-The few results the introduction foregrounds, and where the supporting results sit instead. The details that make the claims substantive, which must never be shortened to "standard". The scope boundaries the reader must keep in view; state each once, where it bites, rather than after every paragraph.
+The question and results the introduction foregrounds, and where the supporting material sits instead. The details that make the claims substantive, which must never be shortened to "standard". The scope boundaries the reader must keep in view; state each once, where it bites, rather than after every paragraph.
 
 ## Appendices
 
@@ -40,4 +38,6 @@ The origin of each statement and proof mechanism taken from the researcher's ear
 
 ## How changes enter
 
-Before adding a result, ask which sentence of the central answer it changes, which reader question it resolves, and whether it replaces, strengthens or supports an existing passage. Revise this file first when the emphasis or order changes, and review it as an editorial artifact before changing the article. Record the decision in the integration report (see the central-article guide); Git holds the history.
+Consider candidate additions, removals, relocations and held material together: how does each serve the central question and reader, and which dependencies must remain? Record each decision and its reader-facing reason in the integration report, with a condition for reconsideration when useful. Reviewed work need not be included; a previous selection can change. Preserve the evidence and one live canonical proof when material moves.
+
+Revise this file first when the emphasis or order changes, and review it as an editorial artifact before changing the article. The central-article guide's admission and review gates still apply; Git holds the history.

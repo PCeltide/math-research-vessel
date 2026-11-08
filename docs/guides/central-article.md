@@ -1,6 +1,6 @@
 # The central article
 
-The project maintains one **central article**, the canonical exposition of its reviewed results. Reports feed it, and it is the account a reader follows. Read this guide, the [writing guide](mathematical-writing.md) and the article's [narrative companion](../../manuscript/article/NARRATIVE.md) before editing, admitting into, restructuring or reviewing the article.
+When the project uses a **central article**, it is the canonical exposition of the reviewed material selected for its question and reader. The research repository preserves a wider body of results, attempts and evidence. Review makes material eligible for consideration; it does not select it for the article or establish the researcher's acceptance. Read this guide, the [writing guide](mathematical-writing.md) and the article's [narrative companion](../../manuscript/article/NARRATIVE.md) before editing, admitting into, restructuring or reviewing the article.
 
 "Central article" names a role. It does not certify readiness for publication or the researcher's acceptance. Maintenance happens inside authorized assignments; this guide creates no recurring task.
 
@@ -8,10 +8,12 @@ The project maintains one **central article**, the canonical exposition of its r
 
 Once a result is admitted, the article holds its canonical proof. Earlier standalone notes and audit PDFs remain frozen records with their original review identities, so there are never two live copies of one proof. A later correction updates the article and a dated report. When it changes an earlier claim's validity, put a superseding pointer in status and in the affected report.
 
+If material is removed or relocated, preserve its proof and evidence, name its new canonical location and update live references. Check that the retained article still contains every essential project proof its claims need. Frozen records keep their identities; relocation leaves one live proof, not two competing versions.
+
 ## The narrative companion
 
 `manuscript/article/NARRATIVE.md` owns the story:
-- the central question and its present answer;
+- the central question and its present answer or open gap;
 - the reader;
 - the contribution in a few connected steps;
 - the reading order (movement, what the reader gains, why it belongs there);
@@ -20,10 +22,14 @@ Once a result is admitted, the article holds its canonical proof. Earlier standa
 
 The charter keeps the intended reader, and the policy keeps the evidence rules; the narrative changes as results change the story.
 
-Before adding a result, answer three questions in the integration report (an "Integration" section of the result's report, or `docs/reports/<task>-integration.md` when several results are admitted together):
-1. Which sentence of the central answer changes?
-2. Which reader question does the result resolve?
-3. Does it replace, strengthen or merely support an existing passage?
+A working draft may start with a question, its scope and checked literature before a new result exists. Say what is known, what this account has not yet resolved and what the draft aims to clarify; an unresolved project question is not by itself a currently open problem in the literature. A synthesis, reconstruction or obstruction may be the contribution; no theorem needs to be invented to fill the template. The admission and source-review rules below still govern the mathematics asserted in the draft.
+
+Consider proposed additions, removals, relocations and held material together. In the integration report (an "Integration" section of the result's report, or `docs/reports/<task>-integration.md` for a combined pass), answer:
+1. Which part of the central answer changes, or remains open?
+2. Which reader question does the passage serve, and what is gained or lost by its inclusion?
+3. Does it replace, strengthen or support another passage, and which dependencies must survive the change?
+
+Record each disposition with its reader-facing reason and, when useful, what would justify revisiting it. A held result remains available with its evidence. A productive research session may make no change to the article; a later result may give several held pieces a common purpose and justify selecting them together. A previous inclusion or exclusion is revisable as the question develops; neither approval nor continued polishing follows automatically.
 
 When the answer changes the emphasis or order, revise NARRATIVE.md **first**. Review it as an editorial artifact: is the contribution clear, the emphasis proportionate, the order right for a new reader? Then implement and check the article against it. Git holds the history; the narrative carries no chronology.
 
@@ -45,13 +51,14 @@ A new claim noticed while editing goes to a bounded research record first. It is
 
 ## Structure
 
-- **Audience:** write for a specialist in the area who has not followed the project. Give the question, the main results and the mechanism early, and introduce machinery when it first solves a visible problem. Use article sections.
-- **Introduction:** give it a hierarchy. Foreground the few headline results, and place supporting results at their natural locations, with pointers from the introduction.
-- **Contribution:** present it in a few connected steps, such as construct, contrast, conclude. Reach the destination once, after all its inputs are in place. Complete both sides of a contrast before interpreting it.
+- **Audience:** write for the intended reader in the charter, who has not followed the project. Give the question, the present answer and its mechanism early, and introduce machinery when it first solves a visible problem. Use article sections.
+- **Introduction:** give it a hierarchy. Foreground the question and contribution at their current evidence state, and place supporting results at their natural locations, with pointers from the introduction.
+- **Contribution:** present it in connected steps chosen for this argument. Reach the destination once, after all its inputs are in place. Complete both sides of a contrast before interpreting it. A reference article can teach exposition without supplying the right architecture for this draft.
+- **Navigation:** include a table of contents when the length or structure makes it useful to the reader; it is not a requirement for every article.
 - **Shared inputs:** state them once, early, at their first use. Keep distinct mechanisms local; never merge proofs just to look uniform.
-- **Prior literature:** compare after the positive results and their mechanism. State the exact clauses that change and what replaces them, and let no catalogue of corrections become the paper's identity. Describe what is established, without asserting priority. A classical result proved along the way gets a checked citation, or, until one is found, a LaTeX source comment and report entry reading "classical; no source checked" (see the citation-check skill, §3); the rendered text never names an unchecked source. "We prove" is not "we discover".
+- **Prior literature:** place it where it establishes the question and the needed inputs. A detailed correction or extension usually follows the relevant result and mechanism; keep each comparison tied to the question it resolves. State the exact clauses that change and what replaces them. Describe what is established, without asserting priority. A classical result proved along the way gets a checked citation, or, until one is found, a LaTeX source comment and report entry reading "classical; no source checked" (see the citation-check skill, §3); the rendered text never names an unchecked source. "We prove" is not "we discover".
 - **Appendices** are sub-stories. Each opens with a question or obstruction left visible in the main text, develops the answer, and closes by making its consequence for the paper plain; each keeps its own rhythm. Order them by mathematical role and dependency, never by date added.
-- **Verification** is always the last appendix, a scan-first evidence map:
+- **Verification:** when the article includes formal or computational evidence, put its verification map in the last appendix:
   - an overview table;
   - headings tied to article results;
   - short lists of checked obligations;
@@ -98,3 +105,5 @@ The templates need a standard TeX distribution with amsart, TikZ and tikz-cd (Te
 The default layout is amsart at 11pt in a full-page text block, with a restrained theorem hierarchy on one counter, equation numbering by section, coloured links and TikZ. Adapt the section names to the actual argument, and keep subject macros out of the preamble until the mathematics needs them.
 
 To use your own template or a journal's class, put an unchanged copy under `templates/` and note its origin, date and SHA-256 in `templates/README.md`. Build the article from a copy, and record the choice in the charter. The rules in this guide still apply: they say what the article must do, not how it must look.
+
+Amended 2026-11-09 at the researcher's request: support selective, revisable articles and early drafts without weakening admission, proof preservation or review.

@@ -12,7 +12,7 @@ Where things live, once they exist:
 
 Scale the records to the work. A short result can have a report of a few paragraphs and a handoff whose headings mostly say "none"; what matters is that every claim's state and every open item is written down.
 
-The lifecycle: **foundation**, then **assignments** (research or audit), each ending in a **result** and its **review**. Reviewed results enter the **article** (see the [central-article guide](central-article.md)). Open directions live on the **ledger**. Every real stop ends in **preservation** and a **handoff**. A small one-off question needs none of this; answer it and say how far it was checked.
+The lifecycle: **foundation**, then **assignments** (research or audit), each ending in a **result** and its **review**. Reviewed results remain available in the research record; the optional **article** gives a selected account, and review alone does not admit a result (see the [central-article guide](central-article.md)). Open directions live on the **ledger**. Every real stop ends in **preservation** and a **handoff**. A small one-off question needs none of this; answer it and say how far it was checked.
 
 ## Foundation
 
@@ -25,6 +25,17 @@ The researcher's request to fill in the charter launches foundation; it needs no
 5. Record in the charter which optional tools the work uses (the article, computation, formal verification, discovery) and why, and whether timeboxing is on.
 6. Propose the first decisive test, with ownership, a stopping condition and the review it needs. A boundary case, a known reconstruction, a precise ambiguity or a source blocker can be the right answer. A finite sample does not prove a universal statement.
 7. Have the charter and proposal reviewed when the first investigation is substantial (see [review dispatch](../../.agents/skills/review-dispatch/SKILL.md)). The researcher may waive this review; record "charter unreviewed" in status. The researcher then decides whether to launch.
+
+## Prepare the next assignment
+
+When asked to prepare the next investigation, keep one short packet in the proposed plan or handoff. Reuse the existing reports and ledger rather than creating another inventory. It should make the choice and first action concrete:
+
+- **Choice and rationale:** recommend a question and compare the credible alternatives, briefly explaining their value, dependencies and why each is proposed or deferred.
+- **Precise objective and inputs:** state the definitions, quantifiers, setting, hypotheses and intended outcome; identify accepted inputs at their revisions and evidence states, and the open premises that limit downstream conclusions.
+- **First decisive checks:** say what observation, source comparison, reconstruction or calculation would distinguish the proposed routes or expose a blocker. Name a legitimate endpoint, which may be a useful synthesis of known results, a refined question or a precise obstruction. Do not require a new theorem or claim novelty from an unsuccessful search.
+- **Boundaries and routes:** distinguish the proposed deliverable, scope, evidence requirements, effort bound and reserved decisions from suggested methods. Routes can change within a launched assignment's boundaries; a new standalone question, expanded scope or changed authority still needs the researcher's decision.
+
+End with a ready-to-send prompt naming the startup reading, inputs, first checks, stopping condition and required review. Label it **prepared, not launched** until the researcher instructs its execution. Stop preparation when the packet is usable, with any launch-blocking uncertainty explicit; do not keep polishing it or silently begin the proposed research. Preparing a later assignment does not suspend the keep-going rule for an assignment already launched.
 
 ## Audit
 
@@ -112,3 +123,5 @@ Keep few active branches: one per line of work, plus one for each concurrent wri
 At a real stop, the end of an assignment, a stop requested by the researcher, or a likely compaction, write a handoff with the [handoff skill](../../.agents/skills/handoff/SKILL.md) and link it from status. Use the same skill when resuming, and when passing work to or from a worker or reviewer.
 
 When formal verification is in use, the stop also records the session's formal candidates, or "none identified", in `formal/CANDIDATES.md`. A prepared prompt does not execute itself. Move finished status entries verbatim to `docs/context/status-history.md` with a one-line pointer.
+
+Amended 2026-11-09 at the researcher's request: distinguish article selection from review and make next-assignment preparation concrete, bounded and separate from launch.

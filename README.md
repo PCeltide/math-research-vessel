@@ -1,6 +1,6 @@
 # Math Research Vessel
 
-A ready-to-use repository for doing mathematical research with AI agents such as Claude Code or Codex.
+A ready-to-use repository for mathematical research, exposition and computational investigation with AI agents such as Claude Code or Codex.
 
 AI agents can draft proofs, search the literature and run checks. Left alone, they also lose track between sessions, cite results they never checked against the source, describe a plausible argument as a proven one, and leave the evidence scattered across chat logs. This repository gives the researcher and the agents one shared way of working, written as plain-text rules and guides that every agent reads:
 
@@ -16,6 +16,8 @@ AI agents can draft proofs, search the literature and run checks. Left alone, th
 2. Open it with your agent and say, for example: *"Read AGENTS.md and help me fill in the project charter for this question: …"*
 3. Answer the agent's questions about the question, its exact setting and hypotheses, what you already know, who is involved, and how you like to work. Tell it which repository to push to and whether it may push. The charter it fills in steers everything after that.
 
+A first investigation may clarify a question, reconstruct known mathematics or identify an obstruction; it need not promise a new theorem. For later work, the [workflow](docs/guides/workflow.md#prepare-the-next-assignment) describes a short preparation packet that compares possible next questions and ends with a prompt ready for the researcher to launch.
+
 You need Git, an AI coding agent, and a TeX distribution (TeX Live, MacTeX or MiKTeX), because developed proofs are written in LaTeX. A proof assistant, a computer algebra system and Python are needed only if your project uses them.
 
 ## What is inside
@@ -27,7 +29,7 @@ docs/context/status.md     a short live snapshot of where the work stands
 docs/project-charter.md    your question, scope, people and preferences
 docs/guides/               how the work runs: workflow, writing, sources, and the optional parts below
 .agents/skills/            step-by-step procedures: review dispatch, citation check, handoff
-manuscript/                the central article: one LaTeX paper that collects the reviewed results
+manuscript/                the central article: a selected account of reviewed material
 templates/                 a LaTeX template for standalone notes
 tools/theorem_search.py    a small client for the TheoremSearch service
 ```
@@ -36,12 +38,14 @@ The optional parts sit quietly until the work needs them. Each one's guide is re
 
 | Part | Used when |
 |---|---|
-| Central article (`manuscript/`) | you write up results as a paper. The default layout is amsart; you can bring your own template or a journal's class. |
+| Central article (`manuscript/`) | you develop a paper around a question, known literature or new results. The default layout is amsart; you can bring your own template or a journal's class. |
 | Computation | a claim rests on a calculation in Python, SageMath, Macaulay2, GAP, Magma, Mathematica or similar. |
 | Formal verification | a key step is worth checking in Lean, Rocq, Isabelle, Agda or a solver certificate. |
 | Discovery | you search for known results (TheoremSearch, zbMATH, the Stacks Project, the LMFDB, the OEIS and others) or map the project's own results. |
 
 An unused part costs nothing, so the simplest choice is to leave it. If you do delete one, also delete its line in AGENTS.md and search the other guides for links to its file.
+
+The research record preserves reviewed results and their evidence. The article selects what serves its question and reader: review alone does not admit material, and useful work can remain outside the paper. Its narrative can develop before there is a new theorem to announce.
 
 ## Agents
 

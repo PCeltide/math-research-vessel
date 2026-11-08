@@ -76,3 +76,7 @@ When the researcher supplies earlier writing, such as a thesis, papers or notes,
 4. Record their feedback, and the guidance it settles, in the charter's People section.
 
 The calibration stays revisable. One accepted passage sets a direction, not a permanent rule, and no habit becomes a rule merely because it occurred.
+
+Reference articles can also calibrate exposition. Identify what a technique does for the reader, such as motivating a definition, staging dependencies or making a proof inspectable. Distinguish that lesson from the reference's subject, maturity, length and section hierarchy. Adopt only what serves the present question and audience; a polished paper's architecture and an individual writer's habits do not become universal requirements.
+
+Amended 2026-11-09 at the researcher's request: make reference-based calibration useful across subjects and stages without importing a finished article's architecture.
