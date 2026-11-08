@@ -1,0 +1,20 @@
+{
+  "commit": "e0bafa2bd6d1b9c8ad8f7ca3859e919a142b098b",
+  "branch": "main",
+  "remote": "https://github.com/PCeltide/math-research-vessel.git",
+  "base": "8d3c93fe9ae2ba3f9440cbed3a8c81771e7beab8",
+  "fetched_commit": "e0bafa2bd6d1b9c8ad8f7ca3859e919a142b098b",
+  "method": "Independent fetch; all changed committed files byte-compared, deletions checked absent",
+  "files": {
+    "README.md": "ffb44c5ada3b1b1477b878889692ea3ea3719aa1125a28ccd451f56b1cd8e2b3",
+    "docs/guides/central-article.md": "7da04b49a10634caba3d7967cfc1dbe64e66b5e3b8fa57d2a15727889473ece7",
+    "docs/guides/mathematical-writing.md": "ef276f4234fca0156f08c4686d0f7fbc494a8f795bea2ec7db5fcbf668871cb1",
+    "docs/guides/workflow.md": "52ed7c4819f8dd0d425df8be48e73311cb3e99248b1be5c2063ad75625d30e8f",
+    "docs/maintenance/2026-11-09/README.md": "d863943e19c680f6fe8b9d253547ed7360ec67993d378ff6f81679272f8d0b02",
+    "docs/maintenance/2026-11-09/candidate-v1.json": "fe2a7ed82953b9ca78ee6f227ec76d474f30294984083df6ff380c1b45b7d608",
+    "docs/maintenance/2026-11-09/review-1.md": "3e92d67a30da6e2ae73c02a5cb4818c8c732fc8dd8196578f5b5cec046cc86d6",
+    "docs/maintenance/2026-11-09/review-brief.md": "ed41f7fde35f1539343e972103dc099eac32554583e78d35010cb69e1da551ce",
+    "manuscript/article/NARRATIVE.md": "87c8d6937892c84b6760e73e35238a7c76fc0b9a7acdfe87a0c985021926e87c"
+  },
+  "absent_paths": []
+}
