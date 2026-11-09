@@ -1,0 +1,7 @@
+# Generic pathway documentation review
+
+The maintainer requested a reusable pathway and priority-bucket system in the general vessel, in one direct commit without a new branch or pull request. This is template maintenance, not a mathematical research assignment.
+
+Read AGENTS.md, policy and starter status in full, the relevant charter/workflow and review-dispatch skill. Verify the five working-tree file identities in [candidate-v1.json](candidate-v1.json), based on 990e61357a975187b7f059337303b2088110d6f7. Review the exact files and diff for generic usefulness, compatibility with scope/launch/evidence/article-selection boundaries, proportionate checkpoint integration, future agent discoverability, usable template and public-template suitability. No external source research or mathematical claims are involved.
+
+Fresh reviewer context; do not consult the author's conversation or private project. Treat any author claims exposed by mandatory startup as unverified and disclose exposure. Read-only role: write only the complete assessment in an isolated temporary file for lead preservation. The lead owns repository changes. Return the review-dispatch assessment form, including exact identity, checked inputs/spans, checks, isolation limits, PASS or REVISE, and actionable findings with severity and required repairs. No stylistic expansion is required. Snapshot freezing before review preserves the requested single-commit workflow.

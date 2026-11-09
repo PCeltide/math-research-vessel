@@ -1,0 +1,10 @@
+{
+  "base_commit": "990e61357a975187b7f059337303b2088110d6f7",
+  "files": {
+    "AGENTS.md": "b72257c91ced65cf0ba9717b5e9674e1554a36c749353c83553925158ba63747",
+    "README.md": "45cdc590186cbac2af699cefe395125e04a98109c1286c11f29f5bfa2f6fce27",
+    "docs/guides/workflow.md": "b28f29a844cf3e5772c1aee39185bfaa1362cf8a16628d4616234cd95e8ce8cb",
+    "docs/pathways/README.md": "98188c172e225b7cb2b27cefcc5a31feaf93a401ac554186088d1eb98ed54ba7",
+    "docs/pathways/TEMPLATE.md": "85e0cf00a14c795a61f19068d159c2a005e1b56294c550c062801004189d0265"
+  }
+}

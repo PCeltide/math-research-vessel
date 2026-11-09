@@ -10,6 +10,7 @@ When a trigger below fires, read that guide in full before acting (for the workf
 
 - [Charter](docs/project-charter.md): starting any assignment (read it in full; it is short), and any question of scope, hypotheses or the researcher's preferences.
 - [Workflow](docs/guides/workflow.md): framing a project, starting an assignment, auditing existing mathematics, testing or writing up a result, updating the ledger, committing or pushing a checkpoint, stopping.
+- [Research pathways](docs/pathways/README.md): capturing a durable research idea, comparing next directions, preparing a selected pathway, or reconciling affected directions when an assignment ends or a dependency changes.
 - [Mathematical writing](docs/guides/mathematical-writing.md): drafting, revising or reviewing any mathematical exposition, whether a proof, note, report or the article.
 - [Sources](docs/guides/sources.md): receiving, storing, recovering or reading a source; recording an edition or locator; running a literature or positioning search.
 - [Central article](docs/guides/central-article.md): editing, admitting a result into, restructuring or reviewing the article in `manuscript/`, its NARRATIVE.md or a mathematical supplement; building the PDF; changing the LaTeX template.
@@ -21,3 +22,5 @@ When a trigger below fires, read that guide in full before acting (for the workf
 - [Handoff](.agents/skills/handoff/SKILL.md): pausing, stopping, a likely compaction, resuming, or passing work to or from a worker or reviewer.
 
 A guide for a part the project does not use, such as the central article, a proof assistant or a computer algebra system, simply never fires.
+
+Amended 2026-11-10 at the researcher's request: make reusable pathway capture and reconciliation discoverable to future agents without requiring a separate reminder.

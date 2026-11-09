@@ -28,6 +28,7 @@ docs/collaboration.md      the policy: authority, evidence, review, preservation
 docs/context/status.md     a short live snapshot of where the work stands
 docs/project-charter.md    your question, scope, people and preferences
 docs/guides/               how the work runs: workflow, writing, sources, and the optional parts below
+docs/pathways/             a guide and template for retaining and choosing research directions
 .agents/skills/            step-by-step procedures: review dispatch, citation check, handoff
 manuscript/                the central article: a selected account of reviewed material
 templates/                 a LaTeX template for standalone notes
@@ -42,8 +43,11 @@ The optional parts sit quietly until the work needs them. Each one's guide is re
 | Computation | a claim rests on a calculation in Python, SageMath, Macaulay2, GAP, Magma, Mathematica or similar. |
 | Formal verification | a key step is worth checking in Lean, Rocq, Isabelle, Agda or a solver certificate. |
 | Discovery | you search for known results (TheoremSearch, zbMATH, the Stacks Project, the LMFDB, the OEIS and others) or map the project's own results. |
+| Research pathways | an idea should survive the session, or you need to compare possible next investigations. |
 
 An unused part costs nothing, so the simplest choice is to leave it. If you do delete one, also delete its line in AGENTS.md and search the other guides for links to its file.
+
+The [pathway guide](docs/pathways/README.md) keeps ideas in four buckets: next, worth returning to, conditional or tangential, and settled or retired. Start with a short ledger entry; use a pathway card when its reasoning or restart details deserve preservation. Agents capture ideas without diverting active work and reconcile affected entries at real checkpoints. A preferred order is a recommendation, and preparing a pathway does not launch it or promise article inclusion.
 
 The research record preserves reviewed results and their evidence. The article selects what serves its question and reader: review alone does not admit material, and useful work can remain outside the paper. Its narrative can develop before there is a new theorem to announce.
 
@@ -62,10 +66,10 @@ To take later improvements from the vessel, make a checkpoint you can return to,
 ```sh
 git remote add vessel https://github.com/PCeltide/math-research-vessel
 git fetch vessel
-git diff HEAD vessel/main -- AGENTS.md docs/collaboration.md docs/guides .agents templates tools manuscript/article/preamble.tex
+git diff HEAD vessel/main -- AGENTS.md docs/collaboration.md docs/guides docs/pathways/README.md docs/pathways/TEMPLATE.md .agents templates tools manuscript/article/preamble.tex
 ```
 
-Your charter, status, reports and manuscript are yours; the policy, guides, skills, templates and tools come from the vessel. Take an update between assignments: it never changes an active assignment's authority or bounds. A repository made with "Use this template" shares no history with the vessel, so merging needs `--allow-unrelated-histories`; copying the files you want is often simpler.
+Your charter, status, ledger, pathway cards, reports and manuscript are yours; the policy, guides, skills, templates and tools come from the vessel. In `docs/pathways/`, only README.md and TEMPLATE.md are vessel guidance; retain your project's cards when taking updates. Take an update between assignments: it never changes an active assignment's authority or bounds. A repository made with "Use this template" shares no history with the vessel, so merging needs `--allow-unrelated-histories`; copying the files you want is often simpler.
 
 ## Status
 

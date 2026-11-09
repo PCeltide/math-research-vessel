@@ -9,6 +9,7 @@ Where things live, once they exist:
 - `notes/<task>.tex`: developed proofs before admission to the article;
 - `scripts/`: computations; `sources/`: the source inventory (see the sources guide); `formal/`: formal work;
 - `docs/ledger.md` and `docs/context/status-history.md`: created on first use.
+- `docs/pathways/Wnnn-<name>.md`: durable reasoning and restart details for an idea, when a ledger row is too short; use the [pathway guide](../pathways/README.md) and its template.
 
 Scale the records to the work. A short result can have a report of a few paragraphs and a handoff whose headings mostly say "none"; what matters is that every claim's state and every open item is written down.
 
@@ -29,6 +30,8 @@ The researcher's request to fill in the charter launches foundation; it needs no
 ## Prepare the next assignment
 
 When asked to prepare the next investigation, keep one short packet in the proposed plan or handoff. Reuse the existing reports and ledger rather than creating another inventory. It should make the choice and first action concrete:
+
+Read the relevant ledger rows and pathway cards if they exist. Compare their current dependencies and reasons for selection or deferral; update a preferred order with its date, rationale and whose recommendation or decision it records. Follow the [pathway guide](../pathways/README.md) when capturing or expanding a candidate. Keep the executable assignment in its plan, linking the card rather than maintaining two contracts.
 
 - **Choice and rationale:** recommend a question and compare the credible alternatives, briefly explaining their value, dependencies and why each is proposed or deferred.
 - **Precise objective and inputs:** state the definitions, quantifiers, setting, hypotheses and intended outcome; identify accepted inputs at their revisions and evidence states, and the open premises that limit downstream conclusions.
@@ -62,6 +65,8 @@ Save each substantive task as `docs/plans/<task>.md`, or link an approved contra
 **Keep going while a path is open.** An assignment stops only when the researcher asks, the stopping condition is met, the effort bound is used up, no justified in-scope route remains (record the obstruction), or the next step needs the researcher or is blocked from outside (an approval, a scope change, a reserved decision, a denial, a missing input or tool). A likely compaction pauses work for a handoff; it does not end the assignment. Reaching a checkpoint, finishing a subtask, a natural pause or a long session is none of these. If a clear next step lies inside scope and the bound, take it; checkpoint as you go. Before stopping, list the open in-scope paths and say which of these reasons ends each one. A stop handoff that names an in-scope next step, within the bound and needing no one else, that the agent could have taken itself was premature.
 
 Every dispatch to a worker names the AGENTS.md startup route plus its extra inputs. Every report records the files read and their revisions.
+
+When starting or resuming an assignment connected to a pathway, consult its relevant ledger row and card alongside the named inputs. The launched plan controls scope; a later change of priority or an expanded card does not enlarge it.
 
 ## Optional: timeboxing
 
@@ -98,6 +103,8 @@ Passing these tests is author evidence, not review. A counterexample found here 
 
 Keep open directions, optional improvements and parked questions in `docs/ledger.md` once there is more than one. Each row has a stable ID that is never reused: the exact source or claim, the benefit, the decisive first check, dependencies, effort and risk, the disposition with its date, and links. Dispositions: open, active, completed, parked, or retained with a reason. A single short pass may keep its dispositions in a table in its report; ledger rows are for items that outlive the pass. The ledger records; it authorizes nothing. Proof gaps belong in the report and status, not here. A direction found in the literature is labelled preliminary until it is checked.
 
+For durable research directions, use the [four pathway buckets](../pathways/README.md) alongside these dispositions. Capture emerging ideas without pursuing them outside the active assignment. At assignment closeout, direction discussions and dependency-changing results, reconcile affected entries and card histories: record what was settled, what remains open, why a priority changed, and any separately selectable continuation. Keep current priority in the ledger and evidence in canonical reports. A completed bounded investigation can leave its broader theme open; name the remaining question rather than marking the whole theme solved. This is checkpoint upkeep, not a recurring research task or a requirement to reread every card.
+
 ## Review
 
 Run review through the [review-dispatch skill](../../.agents/skills/review-dispatch/SKILL.md): freeze the candidate, brief a fresh reviewer, preserve the complete first assessment, dispose of every finding, and send each repair back as a delta. For citation work, use the [citation-check skill](../../.agents/skills/citation-check/SKILL.md) first.
@@ -125,3 +132,5 @@ At a real stop, the end of an assignment, a stop requested by the researcher, or
 When formal verification is in use, the stop also records the session's formal candidates, or "none identified", in `formal/CANDIDATES.md`. A prepared prompt does not execute itself. Move finished status entries verbatim to `docs/context/status-history.md` with a one-line pointer.
 
 Amended 2026-11-09 at the researcher's request: distinguish article selection from review and make next-assignment preparation concrete, bounded and separate from launch.
+
+Amended 2026-11-10 at the researcher's request: generalize pathway capture, priority buckets and checkpoint reconciliation for projects using the vessel; preserve the existing launch and review boundaries.
