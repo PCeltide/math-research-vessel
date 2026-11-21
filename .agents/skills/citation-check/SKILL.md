@@ -45,6 +45,8 @@ Give each use one disposition: ADEQUATE, LOCATOR-REPAIR, ATTRIBUTION-REPAIR, MIS
 When a source missing at the check arrives later, check the affected uses, change their dispositions in a new table, and run the extractor again with `--previous` into the next map version.
 *Done when* the table is complete and the counts reconcile.
 
+Read the rendered passage around each use, including any display it introduces. Could someone starting at this proof identify the author, the exact input, and where the present deduction begins? Apply this check to definitions, examples and later proofs as well as the introduction. See [Credit at the point of use](../../../docs/guides/mathematical-writing.md#credit-at-the-point-of-use).
+
 ## 3. Trace attribution beyond the citation commands
 
 Statement and mechanism are separate questions. Record where each newly admitted **statement** comes from, and where its proof **mechanism**, ansatz or key observation comes from: the literature, the researcher's earlier work, or this project. A new theorem can borrow a method, and an independent proof does not make a known theorem new.

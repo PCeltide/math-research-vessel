@@ -13,6 +13,14 @@ A reader should always know what question is being answered, why the next defini
 - Give a long proof a roadmap. Keep short proofs short.
 - Organize the text by mathematical dependence. The chronology of the investigation, its corrections and failed routes belongs in reports, not in the exposition.
 
+## Credit at the point of use
+
+Added 21 November 2026 at the researcher’s request to make attribution clear throughout a paper.
+
+When a definition, displayed formula or proof step comes from a particular work, introduce the authors and give the theorem, equation or page where the reader first needs it. Say what that result supplies. If the next step specializes it, changes a convention or combines it with a lemma proved here, make that step a separate sentence. For example, “By [authors, theorem], the bound holds for every compact set. Applying it to the compact exhaustion from Lemma 2 gives the displayed estimate.”
+
+Read each section as someone who opened the paper at that proof. Repeat a citation when it takes on a new role or its scope would otherwise be unclear. A single attribution can cover a continuous calculation while its source remains clear. When giving a fresh proof of a known statement, credit the statement and explain which argument is being given here.
+
 ## Before drafting a claim
 
 Write the exact target. Fix the setting, the quantifiers and the hypotheses the argument actually uses: the base field, ring or space, the class of objects allowed, where each object lives, the hypotheses on each map, and any regularity, finiteness or convergence assumption. These are prompts for inspection; do not add them automatically. A theorem for compact spaces does not gain an application to noncompact ones by dropping the word "compact".

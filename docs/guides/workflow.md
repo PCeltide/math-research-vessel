@@ -109,6 +109,8 @@ For durable research directions, use the [four pathway buckets](../pathways/READ
 
 Run review through the [review-dispatch skill](../../.agents/skills/review-dispatch/SKILL.md): freeze the candidate, brief a fresh reviewer, preserve the complete first assessment, dispose of every finding, and send each repair back as a delta. For citation work, use the [citation-check skill](../../.agents/skills/citation-check/SKILL.md) first.
 
+For exposition, read the opening definitions and each later proof for [credit at the point of use](mathematical-writing.md#credit-at-the-point-of-use). The reader should be able to trace a borrowed input and the deduction that follows it from that passage.
+
 ## Preservation
 
 At checkpoints and real stops:
