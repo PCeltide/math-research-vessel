@@ -20,6 +20,8 @@ A first investigation may clarify a question, reconstruct known mathematics or i
 
 You need Git, an AI coding agent, and a TeX distribution (TeX Live, MacTeX or MiKTeX), because developed proofs are written in LaTeX. A proof assistant, a computer algebra system and Python are needed only if your project uses them.
 
+When several sessions address the same question, the [research programme guide](docs/guides/research-programme.md) shows how to give each a substantial endpoint, exchange checked inputs, and bring the results to a direction meeting. Start with its pasteable launch form or its coverage table, depending on whether work is going out or coming back.
+
 ## What is inside
 
 ```

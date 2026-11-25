@@ -68,6 +68,12 @@ A new claim noticed while editing goes to a bounded research record first. It is
   Scale this to the evidence: with only one or two computations, a single table suffices. Distinguish computations used in a proof, independent corroboration and exploratory searches. For formal evidence, separate full from partial statement correspondence, and both from correspondence to the printed proof's steps (see the [formal guide](formal.md#correspondence-review)).
 - **A mathematical supplement** may sit beside the article, under this guide's admission and review rules; the [formal guide](formal.md#in-the-article) says what it holds.
 
+## Revising after a research meeting
+
+Compare each proposed addition with the reader goal in [NARRATIVE.md](../../manuscript/article/NARRATIVE.md). Name the new decision the reader can make, the example that makes it visible and the proof space it costs. Consider replacing several special proofs with one common argument after checking that it retains every hypothesis, marking and boundary case used by the old applications. Preserve an example when it shows what the theorem forgets or why a tempting extension fails. State where the inherited theorem ends and the present deduction begins at the point the reader needs it. Keep a broader result in its reviewed note if the article cannot carry its essential argument. Record the reason and the result that would reopen placement.
+
+Added 2026-11-25 to turn direction meetings into selective, reader-led revisions.
+
 ## Polishing passes
 
 Polishing runs as a bounded assignment. A short pass keeps a disposition table in its integration report; items that outlive the pass become ledger rows. Each item records the exact passage, the reader benefit, the proposed change, its effort and risk, and its decision with the review. The trimming rules in the [writing guide](mathematical-writing.md#trim-without-losing-precision) apply. In addition:

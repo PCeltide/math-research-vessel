@@ -14,6 +14,10 @@ Describe the contribution in connected steps suited to the material: what is est
 
 Say where prior literature frames the question and where any detailed correction or extension belongs. A reference article may offer useful narrative techniques; choose the order this argument needs.
 
+## A tentative goalpost
+
+What question brings the reader here? Give them one concrete input to carry through the paper. What can they now recover, distinguish or rule out? Name the theorem that makes the answer complete in its stated domain and one example that exposes the first unresolved implication outside it. Revisit this paragraph when a result changes the domain or the mechanism. Keep a wider follow-up question on the pathway ledger when it needs its own argument or audience.
+
 ## The reading order
 
 | Movement | What the reader gains | Why it belongs here |

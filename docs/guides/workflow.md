@@ -40,6 +40,8 @@ Read the relevant ledger rows and pathway cards if they exist. Compare their cur
 
 End with a ready-to-send prompt naming the startup reading, inputs, first checks, stopping condition and required review. Label it **prepared, not launched** until the researcher instructs its execution. Stop preparation when the packet is usable, with any launch-blocking uncertainty explicit; do not keep polishing it or silently begin the proposed research. Preparing a later assignment does not suspend the keep-going rule for an assignment already launched.
 
+For a series of related milestones, use the [research programme guide](research-programme.md) to set the scope once, choose independent branches and agree when the researcher wants the results brought back. Added 2026-11-25 to support extended investigations.
+
 ## Audit
 
 Use audit mode when existing mathematics, such as a thesis, a draft or an earlier result, becomes a foundation. It is done when every inventoried item has a locator, an outcome and its evidence.

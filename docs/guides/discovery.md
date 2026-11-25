@@ -23,6 +23,12 @@ Pick the ones that fit the field, and log every query:
 
 Note rate limits and failed searches.
 
+## A survey that changes a proof plan
+
+A focused survey starts with the exact implication still needed. Search separately for the forward statement, its converse and an example at the boundary. For a broader survey, compare the genuinely different cases of the central problem and rank the routes by what they would settle. Record for each promising source the precise statement, edition, hypotheses, what it yields here and the missing deduction. Send useful findings to active proof sessions with a revision and locator. If the survey assembles a proof, give that deduction its own scientific review. A bounded search can justify choosing a route while priority remains open.
+
+Added 2026-11-25 to distinguish a source search for one obstruction from a survey of research direction.
+
 ## Mapping the project's own results
 
 As the project grows, a map of its own statements, dependencies and citations helps with routing and auditability. It can be a hand-kept table or a tool that builds a graph:
