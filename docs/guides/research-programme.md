@@ -24,6 +24,10 @@ Reserve existing pathway IDs and branch names before dispatch. A session can rec
 
 Begin with the central question and the answers a reader could give before this round. Build a small coverage table with one row per meaningful case: hypotheses, proved outcome, remaining implication and evidence. When claiming a list of cases is complete, give the reason it exhausts the possibilities. Reconcile the returns against one another. A later proof may supply the missing premise in an earlier handoff; a counterexample may invalidate another session's planned first test.
 
+| Case and exact hypotheses | What the reader can now decide | Remaining implication or counterexample | Proof revision and review scope |
+|---|---|---|---|
+| [One row per case] | [Established conclusion] | [First unresolved step, if any] | [Checked evidence] |
+
 Invite independent views appropriate to the decision. A mathematical reader checks scope and dependencies; a source reader identifies the published inputs and the deduction still owed; an editorial reader says what a reader can now understand or do. Ask each to name the strongest reason to defer their preferred option. Preserve material disagreement, who actually reviewed what, and the researcher's decision. A meeting can end with further research, a focused survey, an article revision or a justified pause.
 
 Record the outcome in a short hearing note linked from the ledger. Separate directions selected for research, material selected for writing and proofs already admitted to the article. For each deferred option give a concrete trigger for reconsideration. When the researcher wants a discussion, put one consequential choice to them at a time. When the researcher delegates the choice, record the scope of that delegation and carry it out.

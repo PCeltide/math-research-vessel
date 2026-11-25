@@ -16,7 +16,7 @@ Say where prior literature frames the question and where any detailed correction
 
 ## A tentative goalpost
 
-What question brings the reader here? Give them one concrete input to carry through the paper. What can they now recover, distinguish or rule out? Name the theorem that makes the answer complete in its stated domain and one example that exposes the first unresolved implication outside it. Revisit this paragraph when a result changes the domain or the mechanism. Keep a wider follow-up question on the pathway ledger when it needs its own argument or audience.
+What question brings the reader here? Give them one concrete input to carry through the paper. What can they now recover, distinguish or rule out? For a complete answer, name the theorem and explain why its cases exhaust the stated domain. For a reconstruction, partial answer or obstruction, identify the step the reader can now justify and the implication still open, if any. Use a boundary example when it clarifies that distinction. Revisit this paragraph when a result changes the domain or the mechanism. Keep a wider follow-up question on the pathway ledger when it needs its own argument or audience.
 
 ## The reading order
 
